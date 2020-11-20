@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--赋值：<p th:text="${name}"></p>
+    拼接1：<p th:text="'学生姓名是'+${name}+'。没错，就是'+${name}"></p>
+    拼接2：<p th:text="|学生姓名是${name}|" >-->
+   <p th:if="${flag == true}" th:text="if判断成立"></p>
+   <p th:unless="${flag != true}"th:text="unless判断成立"></p>
+</body>
+</html>

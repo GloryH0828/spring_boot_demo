@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+  datasource:
+    url: jdbc:mysql://localhost:3305/mybatis_demo?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&allowMultiQueries=true
+    username: admin
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver

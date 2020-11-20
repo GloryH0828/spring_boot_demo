@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<h1>学生信息</h1>
+<table>
+    <tr>
+        <th>index</th>
+        <th>count</th>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>功&nbsp;&nbsp;&nbsp;能</th>
+    </tr>
+    <tr th:each="student,stat:${list}">
+        <th th:text="${stat.index}"></th>
+        <th th:text="${stat.count}"></th>
+        <th th:text="${student.id}"></th>
+        <th th:text="${student.name}"></th>
+        <th th:text="${student.age}"></th>
+        <th></th>
+    </tr>
+</table>-->
+<!--<img th:src="${src}"/>-->
+<!--<input th:value="${age gt 30?'中年':'青年'}">-->
+<div th:switch="${gender}">
+    <p th:case="女">女</p>
+    <p th:case="男">男</p>
+    <p th:case="*">未知</p>
+</div>
+</body>
+</html>
